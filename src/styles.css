@@ -1,0 +1,19 @@
+h1 {
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 144px;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: url("/images/kristiansand.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 60px 0;
+}
