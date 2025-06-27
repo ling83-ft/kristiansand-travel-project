@@ -2,7 +2,21 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #272044;
 }
-
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("/images/kristiansand.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 200px 0;
+  color: #ffffff;
+}
 header h1 {
   font-style: normal;
   font-weight: 700;
@@ -40,15 +54,48 @@ header a {
   margin-top: 32px;
   display: inline-block;
 }
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url("/images/kristiansand.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 200px 0;
-  color: #ffffff;
+
+main {
+  background-color: white;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+  color: #272044;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
 }
 footer {
   color: white;
@@ -57,21 +104,22 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0;
 }
 footer h3 {
   font-weight: 700;
   font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0%;
+  line-height: 30px;
 }
 footer p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  opacity: 0.7;
 }
 footer li {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 footer a {
   color: white;
@@ -81,8 +129,11 @@ footer ul {
   padding: 0;
 }
 section {
-  max-width: 1200px;
-  margin: 0;
+  padding: 100px;
+  margin: 0 auto;
+}
+section.secondary {
+  background: #f8f8f8;
 }
 .container {
   max-width: 1400px;
@@ -90,7 +141,45 @@ section {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 0 30px 30px;
+}
+.img-responsive {
+  max-width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #462cb2;
+  padding: 16px;
+  text-decoration: none;
 }
 @media (max-width: 800px) {
   header {
@@ -104,5 +193,12 @@ section {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
