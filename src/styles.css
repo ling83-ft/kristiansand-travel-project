@@ -129,6 +129,7 @@ footer ul {
   padding: 0;
 }
 section {
+  max-width: 100%;
   padding: 100px;
   margin: 0 auto;
 }
@@ -156,6 +157,13 @@ section.secondary {
   background-color: white;
   margin: 30px 0;
 }
+.card-header.grid {
+  grid-gap: 0;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1.57 /1;
+}
 .card-body {
   padding: 30px;
 }
@@ -163,10 +171,14 @@ section.secondary {
   padding: 0 30px 30px;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+  display: block;
 }
 .text-center {
   text-align: center;
+}
+.instagram-embeds {
+  margin: 30px 0;
 }
 .btn {
   display: block;
@@ -200,5 +212,11 @@ section.secondary {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
